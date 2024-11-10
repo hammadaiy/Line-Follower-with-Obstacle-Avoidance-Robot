@@ -1,0 +1,95 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.058252544268589654 -0.7735187903188294 -0.6310905815411374 3.2938028538687094
+  position -0.07502401137518111 2.758945649581394 -0.5791685264552668
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 0 -0.04
+  floorSize 2 2
+  floorAppearance PBRAppearance {
+    roughness 1
+    roughnessMap ImageTexture {
+      url [
+        "textures/parquetry/chequered_parquetry_roughness.jpg"
+      ]
+    }
+    metalness 0
+    normalMap ImageTexture {
+      url [
+        "textures/parquetry/chequered_parquetry_normal.jpg"
+      ]
+    }
+    occlusionMap ImageTexture {
+      url [
+        "textures/parquetry/chequered_parquetry_occlusion.jpg"
+      ]
+    }
+  }
+}
+E-puck {
+  hidden position_0_0 6345.257357326655
+  hidden position_0_1 6522.286449263659
+  hidden linearVelocity_0 -0.001230286029578748 1.824541451067072e-05 -0.0010369615316377298
+  hidden angularVelocity_0 -0.0014192441810019964 1.200117341512505 -8.255782021104115e-05
+  hidden translation_1 -0.025999999999999465 0.02 0
+  hidden rotation_1 1 0 0 0.7598029247269039
+  hidden linearVelocity_1 -0.023184418880297725 -4.470053667062698e-06 -0.023218244509424866
+  hidden angularVelocity_1 -1.268029204552519 1.2009727088731181 1.2643360582322518
+  hidden translation_2 0.026000000000000016 0.02 0
+  hidden rotation_2 -1 0 0 0.3401004112482888
+  hidden linearVelocity_2 0.020722796642712937 -2.902438018158622e-05 0.021310634396760512
+  hidden angularVelocity_2 4.461711174333874 1.2416899863293411 -4.4180838541349345
+  translation -0.4422690742381609 -0.0001099872815493539 0.09700792158055967
+  rotation 0.0009136526755036498 -0.9999995128837864 -0.0003734581346986492 2.3270885800571706
+  controller "my_controller_line_follower"
+  groundSensorsSlot [
+    DistanceSensor {
+      name "ps6"
+      type "infra-red"
+    }
+    DistanceSensor {
+      name "ps5"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0 0 0.02
+      name "ps4"
+      type "infra-red"
+    }
+    DistanceSensor {
+      name "ps3"
+      type "infra-red"
+    }
+    DistanceSensor {
+      name "ps2"
+      type "infra-red"
+    }
+    DistanceSensor {
+      name "ps1"
+      type "infra-red"
+    }
+    DistanceSensor {
+      name "ps0"
+      type "infra-red"
+    }
+  ]
+}
+WoodenBox {
+  translation 0 0 -0.1
+  size 0.1 0.2 0.1
+}
+WoodenBox {
+  translation -0.41 0 0.2
+  name "wooden box(1)"
+  size 0.1 0.2 0.1
+}
+TrackOne {
+  translation 0 -0.0075 0
+}
